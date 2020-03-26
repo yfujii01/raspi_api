@@ -11,6 +11,7 @@ router.get('/', function(req, res, next) {
   const query = req.query;
 
   execSync('bash ./script/script2.bash ' + query.aaa);
+  execSync('bash ./script/say.sh hoge ' + query.aaa);
 
   res.send(query);
   // res.send('this is /shell index!' + result);
