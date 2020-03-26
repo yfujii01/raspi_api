@@ -1,0 +1,1 @@
+echo $1 > ./tmp/script2.txt
